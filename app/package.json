@@ -1,5 +1,5 @@
 {
-  "name": "react-php-starterkit",
+  "name": "adverage-adventurers-dnd-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Davisonpro/php-react-starterkit.git"
+    "url": "git+https://github.com/Average-Adventurers-DnD/websitet.git"
   },
   "keywords": [
     "React",
@@ -49,10 +49,10 @@
     "react",
     "kit"
   ],
-  "author": "Davison Pro",
-  "license": "ISC",
+  "author": "Average Adventurers",
+  "license": "GNU GPLv3",
   "bugs": {
-    "url": "https://github.com/Davisonpro/php-react-starterkit/issues"
+    "url": "https://github.com/Average-Adventurers-DnD/websiteissues"
   },
-  "homepage": "https://github.com/Davisonpro/php-react-starterkit#readme"
+  "homepage": "https://github.com/Average-Adventurers-DnD/website#readme"
 }
