@@ -70,7 +70,7 @@ let config = {
 		]
 	},
 	externals: {
-		myApp: 'myApp',
+		TestVariable: 'TestVariable',
 	},
   	plugins: [
 		new ExtractTextPlugin(path.join('..', 'css', 'app.css')),

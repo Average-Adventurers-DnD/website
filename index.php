@@ -1,26 +1,22 @@
 <?php 
-$user = (object) [
-    'name' => 'Life Is Soup',
-    'email' => 'i@am.fork',
-    'logged' => true
-];
+require_once("./app/php_config/Database.php");
+require_once("./app/php_functionality/Website.php");
+
+$Website = new Website();
+$WebsiteDetails = $Website->TestConnection()[0];
 
 ?>
 <!doctype html>
 <html lang="en">
     <head>
-        <title>React PHP starter Kit</title>
+        <title><?php echo $WebsiteDetails["Name"];?></title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/app/assets/css/app.css" type="text/css">
     </head>
     <script type="text/javascript">
-        var STATIC_URL = 'http://localhost/website';
-        var myApp = {
-            user : <?php echo json_encode($user); ?>,
-            logged : <?php echo $user->logged; ?>
-        };
+        var TestVariable = <?php echo json_encode($WebsiteDetails); ?>
     </script>
     <body>
 
